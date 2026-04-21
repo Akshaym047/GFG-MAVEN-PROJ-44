@@ -21,6 +21,11 @@ pipeline
 				{
 					bat 'mvn clean'
 				}
+				{
+        			ansiColor('xterm')
+				{
+          			sh 'mvn test -Dstyle.color=always'
+        		}
 			}
 			stage('Test Stage')
 			{
