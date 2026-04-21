@@ -21,6 +21,7 @@ pipeline
 				{
 					bat 'mvn clean'
 				}
+				Steps
 				{
         			ansiColor('xterm')
 				{
